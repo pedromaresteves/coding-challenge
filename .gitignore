@@ -105,3 +105,6 @@ dist
 
 #Screenshots
 screens/
+
+#tests output
+tests_output/
