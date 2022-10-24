@@ -18,8 +18,10 @@ const expectedReturn = {
 
 module.exports = {
     'Test single User Endpoint': async function(){
-        const res = await axios.get(`${globals.apiTestingBaseUrl}api/users/2`);
+        const res = await axios.get(`${globals.apiTestingBaseUrl}api/user/2`);
         assert.equal(res.status, 200);
+        assert.exists(res.data.data);
+        assert.exists(res.data.support);
         assert.deepEqual(res.data, expectedReturn);        
     }
 };
