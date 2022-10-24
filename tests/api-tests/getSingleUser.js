@@ -20,6 +20,6 @@ module.exports = {
     'Test single User Endpoint': async function(){
         const res = await axios.get(`${globals.apiTestingBaseUrl}api/users/2`);
         assert.equal(res.status, 200);
-        assert.deepEqual(res.data, expectedReturn)
+        assert.deepEqual(res.data, expectedReturn);        
     }
 };
