@@ -14,10 +14,10 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['tests/e2e'],
+  src_folders: ['sample_tests/e2e'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['nightwatch/page-objects', 'page-objects'],
+  page_objects_path: ['nightwatch/page-objects', 'sample_page_objects'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
   custom_commands_path: ['nightwatch/custom-commands'],
@@ -64,7 +64,7 @@ module.exports = {
     },
     apitests : {
       unit_tests_mode : true,
-      src_folders: ['tests/api-tests'],
+      src_folders: ['sample_tests/api-tests'],
       screenshots: {
         enabled: false
       },
